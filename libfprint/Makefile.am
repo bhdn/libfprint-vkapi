@@ -4,6 +4,7 @@ MOSTLYCLEANFILES = $(udev_rules_DATA)
 
 UPEKE2_SRC = drivers/upeke2.c
 UPEKTS_SRC = drivers/upekts.c
+VKAPI_SRC = drivers/vkapi.c
 UPEKTC_SRC = drivers/upektc.c
 UPEKSONLY_SRC = drivers/upeksonly.c
 URU4000_SRC = drivers/uru4000.c
@@ -91,6 +92,8 @@ endif
 if ENABLE_UPEKTS
 DRIVER_SRC += $(UPEKTS_SRC)
 endif
+
+DRIVER_SRC += $(VKAPI_SRC)
 
 if ENABLE_UPEKSONLY
 DRIVER_SRC += $(UPEKSONLY_SRC)

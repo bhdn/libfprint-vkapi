@@ -241,6 +241,9 @@ extern struct fp_driver upekts_driver;
 #ifdef ENABLE_UPEKE2
 extern struct fp_driver upeke2_driver;
 #endif
+
+extern struct fp_driver vkapi_driver;
+
 #ifdef ENABLE_UPEKTC
 extern struct fp_img_driver upektc_driver;
 #endif
